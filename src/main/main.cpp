@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
 int main(void) {
-       cout << "Hello World" << endl;
+       cout << "For Testing CMake" << endl;
        return(0);
 }
