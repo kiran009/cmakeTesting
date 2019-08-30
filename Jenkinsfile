@@ -4,5 +4,6 @@ git(url: 'https://github.com/kiran009/cmakeTesting.git', credentialsId: 'kiran-g
 }
 stage('Build')
 {
+cmakeBuild buildDir: 'build', installation: 'InSearchPath', steps: [[withCmake: true]]
 }
 }
