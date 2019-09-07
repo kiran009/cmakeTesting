@@ -17,5 +17,5 @@ int divide(int x, int y)
 {
 	return x / y;
 }
-void foo();
+void extrafunction();
 #endif // COMMON_HPP_
