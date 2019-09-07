@@ -15,4 +15,5 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 # The following folder will be included
 include_directories("${PROJECT_SOURCE_DIR}")
-add_executable(${EXEC} ${SOURCES})
+#add_executable(${EXEC} ${SOURCES})
+add_executable(main main.cpp extra.cpp)
