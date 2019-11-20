@@ -2,7 +2,7 @@ node()
 {
     stage('Preparation')
     {
-        git(url: 'https://github.com/kiran009/cmakeTesting.git', credentialsId: 'kiran-githubcreds', branch: "master")
+        git(url: 'https://github.com/kiran009/cmakeTesting.git', credentialsId: 'githubcreds', branch: "master")
     }
     stage('Build')
     {
