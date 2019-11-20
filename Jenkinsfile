@@ -7,7 +7,7 @@ node()
     stage('Build')
     {
         //cmakeBuild buildDir: 'build', installation: 'InSearchPath', steps: [[withCmake: true]]
-	sh(script:"cmake -H. -B./build;cmake --build ./build".returnStatus:true)
+	sh(script:"cmake -H. -B./build;cmake --build ./build",returnStatus:true)
     }
     stage("Package")
     {
