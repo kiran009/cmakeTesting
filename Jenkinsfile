@@ -7,11 +7,11 @@ node()
     stage('Build')
     {
         //cmakeBuild buildDir: 'build', installation: 'InSearchPath', steps: [[withCmake: true]]
-	sh(script:"cmake -H. -B./build;cmake --build ./build",returnStatus:true)
+	sh(script:"rm -rf build;cmake3 -H. -B./build;cmake3 --build ./build",returnStatus:true)
     }
     stage("Package")
     {
-	sh(script:"cpack -G RPM --config ./build/CPackConfig.cmake".returnStatus:true)
+	sh(script:"cpack3 -G RPM --config ./build/CPackConfig.cmake".returnStatus:true)
     }
     /*stage("Publish")
     {
